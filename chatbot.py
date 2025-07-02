@@ -80,7 +80,7 @@ input_text=str(st.text_input("Ask Question?"))
 
 
 if input_text!="":
-responce=rag_chain.invoke({"input":input_text})
+    responce=rag_chain.invoke({"input":input_text})
     st.subheader("Answer:")
     st.success(responce["answer"]) 
     # st.write(responce['answer'])
