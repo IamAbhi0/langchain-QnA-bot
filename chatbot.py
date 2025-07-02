@@ -7,7 +7,7 @@ import streamlit as st
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # os.environ["Gemini"]=os.getenv("GEMINI_API_KEY")
-os.environ["Gemini"]=st.secrets("Gemini_api_key")
+os.environ["Gemini"]=st.secrets["Gemini_api_key"]
 
 
 doc=PyPDFLoader("ai.pdf")
